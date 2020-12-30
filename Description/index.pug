@@ -1,0 +1,170 @@
+.description
+    .container
+        .section-area#section
+            a#des.active(href="#section") Description 
+            a#spe(href="#section") Specification
+            a#meter(href="#section") Meterials
+            a#rate(href="#section") Review and Rating
+        .scription
+            #details-1.tab-pane.active
+                p Crafted in premium watch quality, fenix Chronos is the first Garmin timepiece to combine a durable metal case with integrated performance GPS to support navigation and sport. In the tradition of classic tool watches it features a tough design and a set of modern meaningful tools.
+                p  advanced performance metrics for endurance sports, Garmin quality navigation features and smart notifications. In fenix Chronos top-tier performance meets sophisticated design in a highly evolved timepiece that fits your style anywhere, anytime. Solid brushed 316L stainless steel case with brushed stainless steel bezel and integrated EXOTM antenna for GPS + GLONASS support. High-strength scratch resistant sapphire crystal. Brown vintage leather strap with hand-sewn contrast stitching and nubuck inner lining and quick release mechanism.
+            #details-2.tab-pane
+                table
+                    tbody
+                        tr
+                            td.width1 Name
+                            td Salwar Kameez
+                        tr
+                            td.width1 SKU
+                            td 0x48e2c
+                        tr
+                            td.width1 Models
+                            td FX 829 v1
+                        tr
+                            td.width1 Categories
+                            td Digital Print
+                        tr
+                            td.width1 Size
+                            td 60’’ x 40’’
+                        tr
+                            td.width1 Brand
+                            td  Individual Collections
+                        tr
+                            td.width1 Color
+                            td Black, White
+            #details-3.tab-pane
+                table
+                    tbody
+                        tr
+                            td.width1 Top
+                            td Cotton Digital Print Chain Stitch Embroidery Work
+                        tr
+                            td.width1 Bottom
+                            td Cotton Cambaric
+                        tr
+                            td.width1 Dupatta
+                            td Digital Printed Cotton Malmal With Chain Stitch
+            #details-4.tab-pane
+                .review
+                    h2 1 review for Sleeve Button Cowl Neck
+                    .single-review
+                        .review-image
+                            a(href="#")
+                                img(src="./image/client-1.png", alt="")
+                        .review-content
+                            .review-top
+                                .review-name
+                                    h5
+                                        span John Snow
+                                        |  - March 14, 2019
+                                .review-ratting
+                                    .vote
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                                        i.fas.fa-star
+                            p Donec accumsan auctor iaculis. Sed suscipit arcu ligula, at egestas magna molestie a. Proin ac ex maximus, ultrices justo eget, sodales orci. Aliquam egestas libero ac turpis pharetra, in vehicula lacus scelerisque
+                    .ratting
+                        span Add a review
+                        p Your email address will not be published. Required feilds are marked 
+                            span.red *
+                        .ratting-form
+                            form(action="#")
+                                .name-email
+                                    .name
+                                        label(for="#")
+                                            |Name 
+                                            span.red *
+                                        input(type="text " placeholder="")
+                                    .name
+                                        label(for="#")
+                                            |Email
+                                            spa.red *
+                                        input(type="text " placeholder="")
+                                .voted
+                                    .vote
+                                        a(href="#")
+                                            i.fas.fa-star
+                                    .vote
+                                         a(href="#")
+                                            i.fas.fa-star
+                                         a(href="#")
+                                            i.fas.fa-star
+                                    .vote
+                                         a(href="#")
+                                            i.fas.fa-star
+                                         a(href="#")
+                                            i.fas.fa-star
+                                         a(href="#")
+                                            i.fas.fa-star
+                                    .vote
+                                         a(href="#")
+                                            i.fas.fa-star
+                                         a(href="#")
+                                            i.fas.fa-star
+                                         a(href="#")
+                                            i.fas.fa-star
+                                         a(href="#")
+                                            i.fas.fa-star
+                                    .vote
+                                         a(href="#")
+                                            i.fas.fa-star
+                                         a(href="#")
+                                            i.fas.fa-star
+                                         a(href="#")
+                                            i.fas.fa-star
+                                         a(href="#")
+                                            i.fas.fa-star
+                                         a(href="#")
+                                            i.fas.fa-star
+                                .review-ratting.mb20
+                                    label(for="#")
+                                        |Your review
+                                        span.red *
+                                    textarea( name="Your Review")  
+                                .btn
+                                    input(type="sunmit" value="submit" )
+
+script.
+    $('#des').click(function(){
+        $('#des').addClass('active');
+        $('#spe').removeClass('active');
+        $('#meter').removeClass('active');
+        $('#rate').removeClass('active');
+        $('#details-1').addClass('active');
+        $('#details-2').removeClass('active');
+        $('#details-3').removeClass('active');
+        $('#details-4').removeClass('active');
+    })
+    $('#spe').click(function(){
+        $('#spe').addClass('active');
+        $('#des').removeClass('active');
+        $('#meter').removeClass('active');
+        $('#rate').removeClass('active');
+        $('#details-2').addClass('active');
+        $('#details-1').removeClass('active');
+        $('#details-3').removeClass('active');
+        $('#details-4').removeClass('active');
+    })
+    $('#meter').click(function(){
+        $('#meter').addClass('active');
+        $('#spe').removeClass('active');
+        $('#des').removeClass('active');
+        $('#rate').removeClass('active');
+        $('#details-3').addClass('active');
+        $('#details-2').removeClass('active');
+        $('#details-1').removeClass('active');
+        $('#details-4').removeClass('active');
+    })
+    $('#rate').click(function(){
+        $('#rate').addClass('active');
+        $('#spe').removeClass('active');
+        $('#meter').removeClass('active');
+        $('#des').removeClass('active');
+        $('#details-4').addClass('active');
+        $('#details-2').removeClass('active');
+        $('#details-3').removeClass('active');
+        $('#details-1').removeClass('active');
+    })

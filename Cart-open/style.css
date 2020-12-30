@@ -1,0 +1,173 @@
+@media screen and (min-width: 320px) {
+    .open .container  {
+        padding: 0 15px;
+    }
+    .open .container .cart-tax {
+        padding: 45px 18px 50px;
+        background-color: #f9f9f9;
+        border: 1px solid #ebebeb;
+        border-radius: 5px;
+        margin-bottom: 30px;
+    }
+    .open .container .cart-tax  .title {
+        position: relative;
+        
+
+    }
+    .open .container .cart-tax h4 {
+        font-size: 17px;
+        font-weight: 600;
+        background-color: #f8f9f9;
+        position: relative;
+        z-index: 99;
+        display: inline-block;
+        padding-right:18px;
+    }
+    .open .container .cart-tax .title::before {
+        content: '';
+        position: absolute;
+        top: 10px;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        height: 1px;
+        background-color: #e3e1e1;
+        transition: all 0.3s ease;
+    }
+    .open .container .cart-tax .tax {
+        margin-top:22px;
+    }
+    .open .container .cart-tax .tax .tax-select .select label {
+        font-size: 14px;
+        margin: 0 0 5px;
+        font-weight: 400;
+    }
+    .open .container .cart-tax .tax .tax-select .select  {
+            margin-bottom: 26px;
+    }
+    .mg {
+        margin-bottom: 26px;
+
+    }
+    .open .container .cart-tax .tax .tax-select .select select {
+        display: block;
+        width: 100%;
+        border: 1px solid #ebebeb;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        color: #242424;
+        font-size: 13px;
+        height: 40px;
+        padding: 0 50px 0 15px;
+        width: 100%;
+        cursor: pointer;
+        background-color: #fff;
+    }
+    .open .container .cart-tax .tax .tax-select .select input[type="text"] {
+        background: #fff none repeat scroll 0 0;
+        border: 1px solid #ebebeb;
+        height: 40px;
+        box-shadow: none;
+        padding-left: 10px;
+        font-size: 14px;
+        color: #737373;
+        width: 100%;
+    }
+    .open .container .cart-tax .tax .tax-select .btn-2:hover {
+        background-color: #ff2f2f;
+    }
+    .open .container .cart-tax .tax .tax-select .btn-2 {
+        background-color: #000000;
+        border: medium none;
+        color: #fff;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: 600;
+        letter-spacing: .3px;
+        padding: 12px 40px 13px;
+        text-transform: capitalize;
+        -webkit-transition: all 0.3s ease 0s;
+        -o-transition: all 0.3s ease 0s;
+        transition: all 0.3s ease 0s;
+        cursor: pointer;
+    }
+    .open .container .cart-tax .tax> h5 {
+        font-size: 14px;
+        margin: 36px 0 27px;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+    }
+    .open .container .cart-tax .tax .total {
+        border-bottom: 1px solid #ebebeb;
+        border-top: 1px solid #ebebeb;
+        margin: 0 0 27px;
+        padding: 28px 0;
+    }
+    .open .container .cart-tax .tax .total h5 {
+        font-size: 14px;
+        font-weight:600;
+    }
+    .open .container .cart-tax .tax .total ul {
+        padding: 19px 0 0 ;
+    }
+    .open .container .cart-tax .tax .total ul li {
+        color: #242424;
+        list-style: outside none none;
+        margin: 0 0 6px;
+    }
+    .open .container .cart-tax .tax .total ul li input {
+        margin-right: 10px;
+    }
+    .open .container .cart-tax .tax .total ul li span {
+        float: right;
+    }
+    .open .container .cart-tax .tax  .grand {
+        display: flex;
+        justify-content: space-between;
+        color: #ff2f2f;
+        font-size: 20px;
+        font-weight: 500;
+        margin: 0 0 25px;
+        padding: 0;
+    }
+    .open .container .cart-tax .tax .btn-3 {
+        background-color: #000000;
+        color: #fff;
+        display: block;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1;
+        padding: 18px 10px 17px;
+        text-align: center;
+        text-transform: capitalize;
+        letter-spacing: .3px;
+        transition: all 0.3s ease;
+    }
+    .open .container .cart-tax .tax .btn-3:hover {
+        background-color: #ff2f2f;
+    }
+    .coupon {
+        height: 283px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .open .container .open-grid .two-cart {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .open .container .open-grid {
+        display: grid;
+        grid-template-columns: 64.5% 33%;
+        justify-content: space-between;
+    }
+    .open {
+        padding-bottom: 85px;
+    }
+    .open .container .cart-tax  {
+        padding: 45px 30px 50px;
+    }
+}

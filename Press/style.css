@@ -1,0 +1,118 @@
+@media screen and (min-width : 320px) {
+    .press {
+        padding: 55px 0 15px;
+    }
+    .press .container {
+        padding: 0 15px;
+    }
+   .press .container .press-section  {
+        margin-bottom: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+   .press .container .press-section .section-title h2 {
+        font-size: 20px;
+        letter-spacing: -0.25px;
+        line-height: 1;
+        font-weight: 400;
+    }
+   .press .container .press-section .section {
+        margin: 7px 0 0 ;
+    }
+    .press .container .press-section .section .section-all a {
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 16px;
+        color: #000000;
+    }
+    .press .container .press-section .section .section-all a:hover {
+        border-bottom: 1px solid #333;
+    }
+    .press .container .press-area .col-4 .wrap {
+        position: relative  ;
+        margin-bottom: 30px;
+    }
+    .press .container .press-area .col-4 .wrap .press-img {
+        margin-bottom: 15px;
+        position: relative;
+        overflow: hidden;
+    }
+    .press .container .press-area .col-4 .wrap .press-img a img {
+        width: 100%;
+        transition: all 0.3s ease-in-out;
+        transform: scale(1);
+    }
+    .press .container .press-area .col-4 .wrap:hover  .press-img a img {
+        transform: scale(1.1);
+    }
+    .press .container .press-area .col-4 .wrap .press-content .press-meta ul {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .press .container .press-area .col-4 .wrap .press-content .press-meta ul li  {
+        position: relative;
+        margin-right: 30px;
+    }
+    .press .container .press-area .col-4 .wrap .press-content .press-meta ul li:last-child {
+        margin-right: 0;
+    }
+    .press .container .press-area .col-4 .wrap .press-content .press-meta ul li a {
+        color: #000000;
+        font-weight: 600;
+    }
+    .press .container .press-area .col-4 .wrap .press-content .press-meta ul li:first-child:before {
+        position: absolute;
+        content: "";
+        right: -16px;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        width: 1px;
+        height: 12px;
+        background-color: #000;
+    }
+    .press .container .press-area .col-4 .wrap .press-content h3 {
+        font-size: 17px;
+        margin: 5px 0 0;
+        line-height: 28px;
+        font-weight: 600;
+        letter-spacing: -0.25px;
+
+    }
+    .press .container .press-area .col-4 .wrap .press-content h3 a {
+        color: #222;
+
+    }
+    .press .container .press-area .col-4 .wrap .press-content h3 a:hover {
+        text-decoration: underline;
+    }
+
+}
+@media screen and (min-width: 768px) {
+    .press {
+        padding: 75px 0 55px;
+    }
+    .press .container .press-area {
+        display: grid;
+        grid-template-columns: 50% 50% ;
+        justify-content: space-between;
+        margin: 0 -15px;
+    }
+    .press .container .press-area .col-4 .wrap {
+        padding: 0 15px;
+    }
+    .press .container .press-section .section-title h2 {
+        font-size: 30px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .press .container {
+        max-width: 1200px!important;
+        margin: auto;
+    }
+    .press .container .press-area {
+        grid-template-columns: 33% 33% 33%;
+    }
+}

@@ -1,0 +1,140 @@
+.detail.pd-detail
+    .container
+        .product-detail
+            .product-image
+                .image.owl-carousel.owl-theme
+                    .image-area
+                        figure
+                            a(href="#")
+                                img(src="./image/product-1.jpg", alt="")
+                        a(href="#")
+                            i.fas.fa-expand-arrows-alt
+                    .image-area
+                        figure
+                            a(href="#")
+                                img(src="./image/product-14.jpg", alt="")
+                        a(href="#")
+                            i.fas.fa-expand-arrows-alt
+                    .image-area
+                        figure
+                            a(href="#")
+                                img(src="./image/product-13.jpg", alt="")
+                        a(href="#")
+                            i.fas.fa-expand-arrows-alt
+                    .image-area
+                        figure
+                            a(href="#")
+                                img(src="./image/product-6.jpg", alt="")
+                        a(href="#")
+                            i.fas.fa-expand-arrows-alt
+            .product-content.pd-content
+                h2 Simple Blacl T-Shirt
+                .rating-view
+                    .rating
+                        .vote
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                            i.fas.fa-star
+                        .degit
+                            span 5.0
+                    .review
+                        span 62 Reviews
+                        span 242 Orders
+                p Seamlessly predominate enterprise metrics without performance based process improvements.
+                .price
+                    span.new $75.72
+                    span.old $95.72
+                .color
+                    span Color:
+                    ul
+                        li
+                            a.gold(href="#")
+                        li
+                            a.white(href="#")
+                        li
+                            a.pink(href="#")
+                        li
+                            a.organe(href="#")
+                        li
+                            a.mona(href="#")
+                        li
+                            a.cupid(href="#")
+                .color.size
+                    span Size:
+                    ul
+                        li
+                            a(href="#") XS
+                        li
+                            a(href="#") S 
+                        li
+                            a(href="#") M
+                        li
+                            a(href="#") L 
+                        li
+                            a(href="#") XL
+                .quantity
+                    span Quantity:
+                    .cart-plus-minus
+                        button.qty-plus.qtybutton.inc +
+                        input#quantity(type="text" value="1" readonly)
+                        button.qty-minus.qtybutton.dec -
+                .product-detail-meta
+                    ul
+                        li
+                            span Categories:
+                            a(href="#") Woman, 
+                            a(href="#") Dress, 
+                            a(href="#") T-Shirt
+                        li
+                            span Tag:
+                            a(href="#") Fashion, 
+                            a(href="#") Mentone, 
+                            a(href="#") Texas
+                .action
+                    .add-to-cart 
+                        a(href="cart.html") Add To Cart
+                    .action-icon
+                        a(href="#")
+                            i.fas.fa-heart
+                        a(href="#")
+                            i.fas.fa-sync-alt
+                        a(href="#")
+                            i.fas.fa-share-alt
+script.
+    $(document).ready(function(){
+        $('.image').owlCarousel({
+            nav: true,
+            loop: true,
+            responsive: {
+                1000: {
+                    items: 1
+                },
+                768: {
+                    items:1
+                },
+                0: {
+                    items: 1
+                }
+            }
+        })
+    })
+      if ($('.cart-plus-minus').length) {
+        var q = $('.cart-plus-minus');
+        q.each(function () {
+            var $this = $(this),
+                button = $this.children('button'),
+                input = $this.children('input[type="text"]'),
+                val = +input.val();
+            button.on('click', function () {
+                if ($(this).hasClass('qty-minus')) {
+                    if (val === 1) return false;
+                    input.val(--val);
+                }
+                else {
+                    input.val(++val);
+                }
+            });
+        });
+    }

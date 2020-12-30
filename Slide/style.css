@@ -1,0 +1,225 @@
+@media screen and (min-width: 320px) {
+    .slide .slide-container .slider .slide1 {
+        background: url('../image/hm-4-slider-1.jpg');
+       
+    }
+   
+    .slide .slide-container .slider .slide2 {
+        background: url('../image/hm-4-slider-2.jpg');
+    }
+    .slide .slide-container .slider .slide-banner {
+        width: 100%;
+        position: relative;
+        left: 0px;
+        top: 0px;
+        z-index: 999;
+        opacity: 1;
+        height: 400px;
+        background-position: 80%;
+        background-size: cover ;
+    }
+    .slide .slide-container .slider .slide-banner:after {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        opacity:0.4;
+        z-index: 9;
+        content: '';
+    }
+    .slide .slide-container .slider .slide-banner .content {
+        position: absolute;
+        top: 18%;
+        padding: 0 15px;
+        z-index: 10;
+    }
+    .slide .slide-container .slider .slide-banner .content h4 {
+        font-weight: 600;
+        font-size: 16px;
+        letter-spacing: 1px;
+        display: block;
+        text-transform: uppercase;
+    }
+    .slide .slide-container .slider .slide-banner .content h1 {
+        font-size: 25px;
+        line-height: 32px;
+        margin: 10px 0;
+        text-transform: uppercase;
+    }
+    .slide .slide-container .slider .slide-banner .content p {
+        color: #000;
+        font-size: 15px;
+        margin-bottom: 20px;
+        width: 100%;
+        line-height: 26px;
+    }
+    .slide .slide-container .slider .slide-banner .content .button a  {
+        padding: 8px 20px 12px;
+        background-color: #000;
+        color: #fff;
+        font-weight: 500;
+        display: inline-block;
+        font-size: 15px;
+    }
+    .slide .slide-container .slider .slide-banner .content .button a:hover {
+        background-color: #ff2f2f;
+    }
+    .slide .slide-container .owl-theme .owl-nav .owl-prev {
+        position: absolute;
+        top: 50%;
+        left: 2.5%;
+        font-size: 30px;
+        width: 35px;
+        height: 35px;
+        background-color: #fff;
+        text-align: center;
+        line-height: 30px;
+        font-weight: 200;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in;
+
+    }
+    .slide .slide-container .owl-theme:hover .owl-nav .owl-prev{
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(100%);
+    }
+    .slide .slide-container .owl-theme .owl-nav .owl-prev:hover {
+        background-color: #ff2f2f;
+        color: #000;
+    }
+    .slide .slide-container .owl-theme .owl-nav .owl-next:hover {
+        background-color: #ff2f2f;
+        color: #000;
+    }
+    .slide .slide-container .owl-theme:hover .owl-nav .owl-next{
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(-100%);
+    }
+    .slide .slide-container .owl-theme .owl-nav .owl-next {
+        position: absolute;
+        top: 50%;
+        right: 2.5%;
+        font-size: 30px;
+        width: 35px;
+        height: 35px;
+        background-color: #fff;
+        text-align: center;
+        line-height: 30px;
+        font-weight: 200;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in;
+    }
+    .slide .slide-container .owl-theme .owl-dots {
+        position: absolute;
+        bottom: 9%;
+        left: 43%;
+    }
+}
+@media screen and (min-width: 768px) {
+    .slide .slide-container .slider .slide-banner:after {
+        height: 0%;
+    }
+    .slide .slide-container .slider .slide-banner {
+        height: 500px;
+        background-position: 50%;
+    }
+    .slide .slide-container .slider .slide-banner .content h1 {
+        font-size: 40px;
+        line-height: 50px;
+        margin: 14px 0 10px;
+    }
+    .slide .slide-container .slider .slide-banner .content p {
+        width: 61%;
+        margin: 0 0 23px;
+        font-size: 16px;
+        color: #666;
+    }
+    .slide .slide-container .slider .slide-banner .content .button a  {
+        padding: 11px 26px 15px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}
+@media screen and (min-width: 1200px){
+    .slide .slide-container .slider .slide-banner {
+        height: 600px;
+        background-position: 50%;
+    }
+    .slide .slide-container .slider .slide-banner .container {
+        max-width: 1200px!important;
+        margin: auto;
+    }
+    .slide .slide-container .slider .slide-banner .content h1 {
+        font-size: 60px;
+        line-height: 72px;
+        margin: 24px 0 30px;
+        letter-spacing: -0.25px;
+    }
+    .slide .slide-container .slider .slide-banner .content p {
+        width: 61%;
+        margin: 0 0 23px;
+        font-size: 16px;
+        color: #666;
+    }
+    .slide .slide-container .slider .slide-banner .content .button a  {
+        padding: 11px 26px 15px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .slide .slide-container .owl-theme .owl-nav .owl-prev {
+        position: absolute;
+        top: 50%;
+        left: 7.5%;
+        font-size: 40px;
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        text-align: center;
+        line-height: 40px;
+        font-weight: 200;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in;
+
+    }
+    .slide .slide-container .owl-theme .owl-nav .owl-next:hover {
+        background-color: #ff2f2f;
+        color: #000;
+    }
+    .slide .slide-container .owl-theme:hover .owl-nav .owl-next{
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(-150%);
+    }
+    .slide .slide-container .owl-theme .owl-nav .owl-next {
+        position: absolute;
+        top: 50%;
+        right: 7.5%;
+        font-size: 40px;
+        width: 50px;
+        height: 50px;
+        background-color: #fff;
+        text-align: center;
+        line-height: 40px;
+        font-weight: 200;
+        opacity: 0;
+        visibility: hidden;
+        transition: all 0.3s ease-in;
+    }
+    .slide .slide-container .owl-theme .owl-dots {
+        position: absolute;
+        bottom: 9%;
+        left: 50%;
+    }
+    .slide .slide-container .owl-theme:hover .owl-nav .owl-prev{
+        visibility: visible;
+        opacity: 1;
+        transform: translateX(150%);
+    }
+}

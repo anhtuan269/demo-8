@@ -1,0 +1,63 @@
+.open
+    .container
+        .open-grid
+            .two-cart
+                .cart-tax
+                    .title
+                        h4 Estimate Shipping And Tax
+                    .tax
+                        p Enter your destination to get a shipping estimate.
+                        .tax-select
+                            .select
+                                label * Country
+                                select#country(name="country")
+                                    option Bangladesh
+                                    option Albania
+                                    option Aland Island
+                                    option Afghanistan
+                                    option Belgium
+                            .select
+                                label * Region / State
+                                select#country(name="country")
+                                    option Bangladesh
+                                    option Albania
+                                    option Aland Island
+                                    option Afghanistan
+                                    option Belgium
+                            .select
+                                label * Zip/Postal Code
+                                input(type="text")
+                            button.btn-2(type="submit") Get A Quote
+                .cart-tax.coupon
+                    .title
+                        h4 Use Coupon Code
+                    .tax
+                        .tax-select
+                            .select
+                                p Enter your coupon code if you have one.
+                                form(action="#")
+                                    input.mg(type="text")
+                                    button.btn-2(type="submit") Apply Coupon
+            .cart-tax
+                .title
+                    h4 Cart Total
+                .tax
+                    h5 
+                        | Total product
+                        span $260.00
+                    .total
+                        h5 Total shipping
+                        ul
+                            li  
+                                input(type="checkbox") 
+                                |   Standard 
+                                span $30.00
+                            li  
+                                input(type="checkbox") 
+                                |Express 
+                                span $20.00
+                    h4.grand
+                        | Grand total
+                        span $260.00
+                    a.btn-3(href="checkout.html") Procceed To Checkout
+

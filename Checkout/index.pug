@@ -1,0 +1,270 @@
+.checkout
+    .container 
+        .customer-zone
+            p
+                i.far.fa-check-circle
+                |Returning customer? 
+                a#login(href="#") Click here to login
+            .login-area.none
+                .login.mr20
+                    p If you have shopped with us before, please enter your details in the boxes below. If you are a new customer, please proceed to the Billing & Shipping section.
+                    .row
+                        form(action="#")
+                            label 
+                                | Username Or Email Adrees
+                                span.red  *
+                            input(type="text") 
+                        form(action="#")
+                            label 
+                                | Paswords
+                                span.red  *
+                            input(type="text")
+                .button
+                    button(type="submit") Login
+                    .checkbox
+                        input(type="checkbox")
+                        label Remember me
+                .lost-passwords
+                    a(href="#") Lost Your Passwords?
+                .login-with
+                    span Login with:
+                    ul
+                        li
+                            a(href="#") Facebook
+                        li
+                            a(href="#") Twitter
+                        li
+                            a(href="#") Google
+                    
+        .customer-zone
+            p
+                i.far.fa-check-circle
+                |Have a coupon? 
+                a#code(href="#") Click here to enter your code
+            .code.mr20.none
+                form(action="#")
+                    input(type="text" placeholder=" Coupon Code")
+                    input(type="submit" value = "APPLY COUPON")
+        .checkout-wrap
+            .col-7
+                .billing-info 
+                    h3 BILLING DETAILS
+                    .row
+                        .name-info.company
+                            .bill-info.mb20
+                                label(for="#")
+                                    |First Name
+                                    abbr.require(title="require").red *
+                                input(type="text")
+                            .bill-info.mb20
+                                label(for="#")
+                                    |Last Name
+                                    abbr.require(title="require").red *
+                                input(type="text")
+                        .company
+                            .bill-info.mb20
+                                label(for="#")
+                                    |Company Name
+                                    abbr.require(title="require").red *
+                                input(type="text")
+                        .company
+                            .bill-info.mb20
+                                label(for="#")
+                                    |Country
+                                    abbr.require(title="require").red *
+                                select#country(name="#")
+                                    option Select a country
+                                    option Azerbaijan
+                                    option Bahamas
+                                    option Bahrain
+                                    option Bangladesh
+                                    option Barbados
+                        .company
+                            .bill-info.mb20
+                                label(for="#")
+                                    |Street Address
+                                    abbr.require(title="require").red *
+                                input.mb20.billing-address(type="text" placeholder="House number and street name")
+                                input(type="text" placeholder="Apartment, suite, unit etc.")
+                        .company
+                            .bill-info.mb20
+                                label(for="#")
+                                    |Town / City
+                                    abbr.require(title="require").red *
+                                input(type="text")
+                        .company
+                            .bill-info.mb20
+                                label(for="#")
+                                    |State / Country
+                                    abbr.require(title="require").red *
+                                input(type="text")
+                        .company
+                            .bill-info.mb20
+                                label(for="#")
+                                    |Postcode / ZIP
+                                    abbr.require(title="require").red *
+                                input(type="text")
+                        .company
+                            .bill-info.mb20
+                                label(for="#")
+                                    |Phone
+                                    abbr.require(title="require").red *
+                                input(type="text")
+                        .company
+                            .bill-info.mb20
+                                label(for="#")
+                                    |Email Address
+                                    abbr.require(title="require").red *
+                                input(type="text")
+                    .checkout-account
+                        input.checkout-toggle(type="checkbox")
+                        span Create An Account
+                    .open-toggle.mb30.none
+                        lable Email Address
+                        input(type="text" placeholder="Passwords")
+                    .checkout-account
+                        input.checkout-toggle(type="checkbox")
+                        span Ship to a different address?
+                    .different-address.none
+                        .row
+                            .name-info.company
+                                .bill-info.mb20
+                                    label(for="#")
+                                        |First Name
+                                        abbr.require(title="require").red *
+                                    input(type="text")
+                                .bill-info.mb20
+                                    label(for="#")
+                                        |Last Name
+                                        abbr.require(title="require").red *
+                                    input(type="text")
+                            .company
+                                .bill-info.mb20
+                                    label(for="#")
+                                        |Company Name
+                                        abbr.require(title="require").red *
+                                    input(type="text")
+                            .company
+                                .bill-info.mb20
+                                    label(for="#")
+                                        |Country
+                                        abbr.require(title="require").red *
+                                    select#country(name="#")
+                                        option Select a country
+                                        option Azerbaijan
+                                        option Bahamas
+                                        option Bahrain
+                                        option Bangladesh
+                                        option Barbados
+                            .company
+                                .bill-info.mb20
+                                    label(for="#")
+                                        |Street Address
+                                        abbr.require(title="require").red *
+                                    input.mb20.billing-address(type="text" placeholder="House number and street name")
+                                    input(type="text" placeholder="Apartment, suite, unit etc.")
+                            .company
+                                .bill-info.mb20
+                                    label(for="#")
+                                        |Town / City
+                                        abbr.require(title="require").red *
+                                    input(type="text")
+                            .mini
+                                .company
+                                    .bill-info.mb20
+                                        label(for="#")
+                                            |State / Country
+                                            abbr.require(title="require").red *
+                                        input(type="text")
+                                .company
+                                    .bill-info.mb20
+                                        label(for="#")
+                                            |Postcode / ZIP
+                                            abbr.require(title="require").red *
+                                        input(type="text")
+                                .company
+                                    .bill-info.mb20
+                                        label(for="#")
+                                            |Phone
+                                            abbr.require(title="require").red *
+                                        input(type="text")
+                                .company
+                                    .bill-info.mb20
+                                        label(for="#")
+                                            |Email Address
+                                            abbr.require(title="require").red *
+                                        input(type="text")
+                    .note
+                        label(for="#") Order notes
+                        textarea#note(name="message", cols="30",  placeholder ="Notes about your order, e.g. special notes for delivery. ")
+            .col-5
+                .order-area
+                    h3 YOUR ORDER
+                    .your-order
+                        .your-order-info
+                            .info.order
+                                ul
+                                    li
+                                        | Product
+                                        span Total
+                            .midle.order
+                                ul
+                                    li
+                                        | Product Name X 1
+                                        span $329
+                                    li
+                                        | Product Name X 1
+                                        span $329
+                            .order-subtotal.order
+                                ul
+                                    li
+                                        | Product Name X 1
+                                        span $329
+                            .shipping.order
+                                ul
+                                    li
+                                        | Shipping
+                                        p Enter your full address 
+                            .order-total.order
+                                ul
+                                    li
+                                        | Total
+                                        span $273.00
+                        .order-method
+                            .payment
+                                input(type="radio" value="cheque" checked="checked").input-ridio
+                                label  Direct Bank Transfer 
+                                .payment-bacs
+                                    p Make your payment directly into our bank account. Please use your Order ID as the payment reference.
+                            .payment
+                                input(type="radio" value="cheque" ).input-ridio
+                                label  Direct Bank Transfer 
+                                .payment-bacs.none
+                                    p Make your payment directly into our bank account. Please use your Order ID as the payment reference.
+                            .payment
+                                input(type="radio" value="cheque" ).input-ridio
+                                label  Direct Bank Transfer 
+                                .payment-bacs.none
+                                    p Make your payment directly into our bank account. Please use your Order ID as the payment reference.
+                            .payment
+                                input(type="radio" value="cheque").input-ridio
+                                label  
+                                    | Paypal
+                                    img(src="./image/payment.png", alt="")
+                                    a(href="#") WHAT IS A PAYPAL?
+                                .payment-bacs.none
+                                    p Make your payment directly into our bank account. Please use your Order ID as the payment reference.
+                    .place-order
+                        a(href="#") place order        
+script.
+    $('#login').click(function(){
+        $('.login-area').toggleClass('none');
+        $('.code').addClass('none');
+    })
+    $('#code').click(function(){
+        $('.code').toggleClass('none');
+        $('.login-area').addClass('none');
+    })
+    $('#address').click(function(){
+        ('.different-address').removeClass('none')
+    })

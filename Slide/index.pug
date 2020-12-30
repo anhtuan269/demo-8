@@ -1,0 +1,44 @@
+.slide
+    .slide-container
+        .slider.owl-carousel.owl-theme
+            .slide-banner.slide1
+                .container
+                    .content
+                        h4 LOOKBOCK
+                        h1
+                            | Denim Mixed 
+                            br
+                            | Layering Combine 
+                            br
+                            |collect
+                        p We love seeing how our Raifa wearers like to wear their Norda
+                        .button
+                            a(href="#") Explore Now
+            .slide-banner.slide2
+                .container
+                    .content
+                        h4 LOOKBOCK
+                        h1
+                            | Denim Mixed 
+                            br
+                            | Layering Combine 
+                            br
+                            |collect
+                        p We love seeing how our Raifa wearers like to wear their Norda
+                        .button
+                            a(href="#") Explore Now
+script.
+    $(document).ready(function(){
+        $('.slider').owlCarousel({
+            nav:true,
+            loop: true,
+            responsive: {
+                1000: {
+                    items: 1
+                },
+                0: {
+                    items: 1
+                }
+            }
+        })
+    })

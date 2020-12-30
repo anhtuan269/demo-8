@@ -1,0 +1,94 @@
+.cart 
+    .container
+        .cart-title 
+            h3 Your cart items
+        .table-content.table-responsive.cart-content
+            table
+                thead
+                    tr
+                        th Image
+                        th Product Name
+                        th Until Price
+                        th Qty
+                        th Subtotal
+                        th Action
+                tbody
+                    tr
+                        td.thumbnail 
+                            a(href="detail.html")
+                                img(src="./image/product-1.jpg", alt="")
+                        td.name
+                            a(href="detail.html") Simple Black T-Shirt
+                        td.price 
+                            span $ 260.00
+                        td.quantity
+                            .cart-plus-minus
+                                button.qty-plus.qtybutton.inc +
+                                input#quantity(type="text" value="1" readonly)
+                                button.qty-minus.qtybutton.dec -
+                        td.subtotal
+                            span $ 500.00
+                        td.remove
+                            a(href="#")
+                                i.fas.fa-times
+                    tr
+                        td.thumbnail 
+                            a(href="detail.html")
+                                img(src="./image/product-14.jpg", alt="")
+                        td.name
+                            a(href="detail.html") Simple Black T-Shirt
+                        td.price 
+                            span $ 260.00
+                        td.quantity
+                            .cart-plus-minus
+                                button.qty-plus.qtybutton.inc +
+                                input#quantity(type="text" value="1" readonly)
+                                button.qty-minus.qtybutton.dec -
+                        td.subtotal
+                            span $ 500.00
+                        td.remove
+                            a(href="#")
+                                i.fas.fa-times
+                    tr
+                        td.thumbnail 
+                            a(href="detail.html")
+                                img(src="./image/product-6.jpg", alt="")
+                        td.name
+                            a(href="detail.html") Simple Black T-Shirt
+                        td.price 
+                            span $ 260.00
+                        td.quantity
+                            .cart-plus-minus
+                                button.qty-plus.qtybutton.inc +
+                                input#quantity(type="text" value="1" readonly)
+                                button.qty-minus.qtybutton.dec -
+                        td.subtotal
+                            span $ 500.00
+                        td.remove
+                            a(href="#")
+                                i.fas.fa-times
+        .cart-update
+            .shipping
+                a(href="#") Continute Shopping
+            .cart-clear
+                button Update Cart
+                a(href="#") Clear Cart
+script.
+     if ($('.cart-plus-minus').length) {
+        var q = $('.cart-plus-minus');
+        q.each(function () {
+            var $this = $(this),
+                button = $this.children('button'),
+                input = $this.children('input[type="text"]'),
+                val = +input.val();
+            button.on('click', function () {
+                if ($(this).hasClass('qty-minus')) {
+                    if (val === 1) return false;
+                    input.val(--val);
+                }
+                else {
+                    input.val(++val);
+                }
+            });
+        });
+    }

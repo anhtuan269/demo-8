@@ -1,0 +1,130 @@
+@media screen and (min-width: 320px ) {
+    .banner-area {
+        padding-bottom: 25px;
+    }
+    .banner-area .container {
+        padding: 0 15px;
+    }
+    .banner-area .container .banner-wrap .col-6 {
+        position: relative;
+        width: 100%;
+    }
+    .banner-area .container .banner-wrap .col-6 .banner {
+        position: relative;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+    .mb-30 {
+        margin-bottom: 30px;
+    }
+    .banner-area .container .banner-wrap .col-6 .banner .image-content {
+        position: absolute;
+        top:50%;
+        left: 20px;
+        transform: translateY(-60%);
+    }
+    .banner-area .container .banner-wrap .col-6 .banner .image-content > span {
+        font-size: 14px;
+        color: #999;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        display: block;
+        line-height: 16px;
+        margin: 0 0 6px;
+    }
+    .banner-area .container .banner-wrap .col-6 .banner .image-content h2 {
+        text-transform: uppercase;
+        letter-spacing: -0.25px;
+        font-size: 22px;
+        line-height: 27px;
+    }
+    .banner-area .container .banner-wrap .col-6 .banner .image-content p {
+        margin: 5px 0 6px;
+        line-height: 20px;
+        width: 85%;
+    }
+    .banner-area .container .banner-wrap .col-6 .banner .image-content .button a {
+        padding: 5px 15px 5px;
+        font-size: 13px;
+        color: #000;
+        background-color: #fff;
+        font-weight: 500;
+        display: inline-block;
+    }
+    .banner-area .container .banner-wrap .col-6 .banner .image-content .button a:hover {
+        color: #fff;
+        background-color: #000;
+    }
+    .banner-area .container .banner-wrap .col-6 .banner .image-content h2 .sell {
+        display: inline-block;
+        font-weight: 600;
+        color: #ff2f2f;
+        margin-right: 5px;
+    }
+    .banner-area .container .banner-wrap .col-6 .banner .image-content .mega {
+        margin-bottom: 20px;
+    }
+    .banner-area .container .banner-wrap .col-6 .banner .image-zoom a img {
+        transform: scale(1);
+        transition: all 0.5s ease-in-out;
+        width: 100%;
+    }
+    .banner-area .container .banner-wrap .col-6 .banner:hover .image-zoom a img {
+        transform: scale(1.1);
+    }
+    .banner-area .container .banner-wrap .col-6 .banner:hover .image-zoom {
+        position: relative;
+        overflow: hidden;
+    }
+}
+@media screen and (min-width: 768px) {
+    .banner-area .container .banner-wrap .col-6 .banner .image-content {
+        left: 30px;
+    }
+    .banner-area .container .banner-wrap .col-6 .banner .image-content > span {
+        margin: 0 0 40px;
+    }
+    .banner-area .container .banner-wrap .col-6 .banner .image-content h2 {
+        font-size: 48px;
+        line-height: 48px;
+    }
+    .banner-area .container .banner-wrap .col-6 .banner .image-content p {
+        width: 68%;
+        margin: 20px 0 48px;
+    }
+    .banner-area .container .banner-wrap .col-6 .banner .image-content .button a {
+        padding: 12px 25px 14px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .banner-area {
+        padding-bottom: 45px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .banner-area .container {
+        padding: 0 15px;
+        margin: auto;
+
+    }
+    .banner-area .container .banner-wrap {
+        margin: 0 -15px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    .banner-area .container .banner-wrap .col-6 .banner {
+        margin: 0 15px;
+    }
+    .banner-area {
+        padding-bottom: 85px;
+    }
+}
+@media screen and  (min-width : 1440px) {
+    .banner-area .container {
+        padding: 0 70px;
+        margin: auto;
+
+    }
+}

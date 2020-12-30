@@ -1,0 +1,48 @@
+@media screen and ( min-width: 320px ) {
+    .slide-logo {
+        padding-bottom: 35px;
+    }
+    .slide-logo .container .logo {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        justify-content: space-between;
+    }
+    .slide-logo .container .logo .single-logo {
+        margin-bottom: 10px;
+    }
+    .slide-logo .container .logo .single-logo  img {
+        width: 100%;
+        opacity: 0.4;
+        transition: all 0.5s ease-in-out;
+        transform:scale(1)
+    }
+    .slide-logo .container .logo .single-logo:hover  img {
+        opacity: 1;
+        transform:scale(1.1)
+    }
+}
+@media screen and (min-width: 768px) {
+    .slide-logo .container .logo {
+        display: grid;
+        grid-template-columns: 33% 33% 33%;
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .slide-logo .container .logo {
+        display: grid;
+        grid-template-columns: 20% 20% 20% 20% 20%;
+        justify-content: space-between;
+    }
+    .slide-logo .container {
+        max-width: 1200px!important;
+        margin: auto;
+        padding: 0 ;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .slide-logo .container {
+        max-width: 1200!important;
+        margin: auto;
+    }
+}
